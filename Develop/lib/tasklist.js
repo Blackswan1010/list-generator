@@ -1,12 +1,14 @@
 const Component = require('../lib/component.js');
 
 class TaskList extends Component{
-    constructor(){
+    constructor(listItems){
         super();
+
+        this.listItems = listItems;
     };
 
     render = () => {
-        return `<ul class="tasks">${this.children}</ul>`;
+        return `<ul class="tasks">${this.listItems}</ul>`;
     }
 }
 

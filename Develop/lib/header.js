@@ -2,6 +2,7 @@ const Component = require('../lib/component.js');
 
 class Header extends Component{
     constructor(title, date){
+        super();
         this.title = title;
         this.date = date;
     }
